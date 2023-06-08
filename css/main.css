@@ -172,8 +172,7 @@ a:hover {
 
 .nav_list {
   display: flex;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
+  column-gap: 40px;
 }
 
 .info {
@@ -205,8 +204,7 @@ a:hover {
 
 .benefits_row {
   display: flex;
-  -moz-column-gap: 70px;
-       column-gap: 70px;
+  column-gap: 70px;
   justify-content: center;
 }
 
@@ -305,4 +303,29 @@ a:hover {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+}
+
+.form_input {
+  height: 50px;
+  padding: 12px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #FFFFFF;
+}
+.form_input::placeholder {
+  color: #BEBEBE;
+}
+
+.form_privacy {
+  font-size: 13px;
+  color: #E7E7E7;
+}
+
+.form_btn {
+  height: 50px;
+  padding: 12px;
+  text-align: center;
+  background-color: #D4C17F;
+  font-weight: 700;
+  color: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */
