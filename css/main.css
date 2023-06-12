@@ -305,20 +305,33 @@ a:hover {
   font-weight: 400;
 }
 
+.cta_form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px 30px;
+}
+
 .form_input {
   height: 50px;
   padding: 12px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
   color: #FFFFFF;
+  transition: background-color 0.2s ease-in;
+  transition: box-shadow 0.2s ease;
 }
 .form_input::placeholder {
   color: #BEBEBE;
+}
+.form_input:focus {
+  background-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.132);
 }
 
 .form_privacy {
   font-size: 13px;
   color: #E7E7E7;
+  text-align: center;
 }
 
 .form_btn {
@@ -328,4 +341,41 @@ a:hover {
   background-color: #D4C17F;
   font-weight: 700;
   color: #FFFFFF;
+  transition: filter 0.2s ease-in;
+  transition: box-shadow 0.2s ease;
+}
+.form_btn:hover {
+  filter: saturate(130%);
+  box-shadow: 0px 0px 20px 1px rgba(253, 220, 54, 0.367);
+}
+
+.video_link {
+  position: relative;
+  display: block;
+}
+.video_link::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(36, 43, 51, 0.8);
+  transition: background 0.2s ease-in;
+}
+.video_link:hover::before {
+  background: rgba(36, 43, 51, 0.7);
+}
+
+.video_icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-in;
+}
+
+.video_link:hover .video_icon {
+  transform: translate(-50%, -50%) scale(1.2);
+  filter: saturate(1.5);
 }/*# sourceMappingURL=main.css.map */
