@@ -378,4 +378,32 @@ a:hover {
 .video_link:hover .video_icon {
   transform: translate(-50%, -50%) scale(1.2);
   filter: saturate(1.5);
+}
+
+.section-map {
+  padding: 180px 0;
+}
+
+.section-map_title {
+  margin-bottom: 88px;
+}
+
+.map {
+  background: #626262;
+  height: 358px;
+}
+
+.feedback {
+  padding-bottom: 180px;
+}
+
+.feedback_title {
+  padding-bottom: 38px;
+}
+
+.feedback_form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
