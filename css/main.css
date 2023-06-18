@@ -1,4 +1,4 @@
-/* Reset and base styles  ????*/
+/* Reset and base styles  */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap");
 * {
   padding: 0px;
@@ -125,6 +125,10 @@ a:hover {
   line-height: 48px;
 }
 
+.none {
+  display: none !important;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -135,6 +139,12 @@ a:hover {
   background-repeat: no-repeat;
   padding-top: 30px;
   padding-bottom: 74px;
+}
+@media screen and (max-width: 999px) {
+  .header {
+    min-height: unset;
+    row-gap: 50px;
+  }
 }
 
 .header_top-row {
@@ -152,6 +162,12 @@ a:hover {
   padding-bottom: 121px;
   position: relative;
 }
+@media screen and (max-width: 999px) {
+  .header_title {
+    font-size: 36px;
+    padding-bottom: 100px;
+  }
+}
 
 .header_title-icon {
   position: absolute;
@@ -164,6 +180,28 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+}
+@media screen and (max-width: 999px) {
+  .header_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .header_nav {
+    display: none;
+  }
+}
+
+.header_nav-btn {
+  display: none;
+}
+@media screen and (max-width: 999px) {
+  .header_nav-btn {
+    display: block;
+  }
 }
 
 .nav {
@@ -191,12 +229,21 @@ a:hover {
   width: 21px;
   height: 21px;
   background-repeat: no-repeat;
+  background-position: center;
 }
 .info-map::before {
   background-image: url("./../img/header/map.svg");
 }
 .info-tel::before {
   background-image: url("./../img/header/phone.svg");
+}
+@media screen and (max-width: 999px) {
+  .info {
+    font-size: 14px;
+  }
+  .info-map, .info-tel {
+    padding-left: 26px;
+  }
 }
 
 .benefits {
