@@ -133,12 +133,12 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 74px;
   min-height: 840px;
   background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url(./../img/header/header-bg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  padding-top: 30px;
-  padding-bottom: 74px;
 }
 @media screen and (max-width: 999px) {
   .header {
@@ -151,6 +151,36 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header_top-row--mobile {
+  position: fixed;
+  background-color: #242B33;
+  top: 0;
+  width: 100%;
+  left: 0;
+  height: 100%;
+  z-index: 9;
+  justify-content: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.header_top-row--mobile .header_nav {
+  display: block;
+}
+.header_top-row--mobile .nav_list {
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.header_top-row--mobile .header_nav-btn {
+  position: fixed;
+  top: 60px;
+  right: 30px;
 }
 
 .header_title {
@@ -212,6 +242,66 @@ a:hover {
 .nav_list {
   display: flex;
   column-gap: 40px;
+}
+
+/* Nav Icon */
+.nav-icon-btn {
+  --time: 0.1s;
+  --width: 40px;
+  --height: 30px;
+  --line-height: 1px;
+  --line-margin: 2;
+  --color: #fff;
+  height: var(--height);
+  width: var(--width);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-icon {
+  position: relative;
+  width: var(--width);
+  height: var(--line-height);
+  background-color: var(--color);
+}
+
+.nav-icon::before,
+.nav-icon::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: var(--width);
+  height: var(--line-height);
+  background-color: var(--color);
+  transition: transform var(--time) ease-in, top var(--time) linear var(--time);
+}
+
+.nav-icon::before {
+  top: calc(var(--line-height) * -8);
+}
+
+.nav-icon::after {
+  top: calc(var(--line-height) * 8);
+}
+
+.nav-icon.nav-icon--active {
+  background-color: transparent;
+}
+
+.nav-icon.nav-icon--active::before,
+.nav-icon.nav-icon--active::after {
+  top: 0;
+  transition: top var(--time) linear, transform var(--time) ease-in var(--time);
+}
+
+.nav-icon.nav-icon--active::before {
+  transform: rotate(45deg);
+}
+
+.nav-icon.nav-icon--active::after {
+  transform: rotate(-45deg);
 }
 
 .info {
