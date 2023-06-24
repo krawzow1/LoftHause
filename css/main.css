@@ -124,6 +124,11 @@ a:hover {
   color: #D4C17F;
   line-height: 48px;
 }
+@media screen and (max-width: 959px) {
+  .title-2 {
+    font-size: 28px;
+  }
+}
 
 .none {
   display: none !important;
@@ -144,7 +149,7 @@ a:hover {
   background-position: center center;
   background-repeat: no-repeat;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header {
     min-height: unset;
     row-gap: 50px;
@@ -196,7 +201,7 @@ a:hover {
   padding-bottom: 121px;
   position: relative;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header_title {
     font-size: 36px;
     padding-bottom: 100px;
@@ -215,7 +220,7 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header_footer {
     display: flex;
     flex-direction: column;
@@ -223,7 +228,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header_nav {
     display: none;
   }
@@ -232,7 +237,7 @@ a:hover {
 .header_nav-btn {
   display: none;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header_nav-btn {
     display: block;
   }
@@ -331,7 +336,7 @@ a:hover {
 .info-tel::before {
   background-image: url("./../img/header/phone.svg");
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .info {
     font-size: 14px;
   }
@@ -363,7 +368,7 @@ a:hover {
   column-gap: 70px;
   justify-content: center;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .benefits_row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
@@ -378,7 +383,7 @@ a:hover {
 .benefits_item-img {
   margin-bottom: 53px;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .benefits_item-img {
     width: 60px;
     height: 60px;
@@ -391,7 +396,7 @@ a:hover {
   line-height: 1.35;
   font-family: "Roboto", sans-serif;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .benefits_item-text {
     font-size: 16px;
   }
@@ -419,9 +424,19 @@ a:hover {
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
+@media screen and (max-width: 959px) {
+  .apartmens_cards {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
+}
 
 .apartmens_title {
   margin-bottom: 88px;
+}
+@media screen and (max-width: 959px) {
+  .apartmens_title {
+    margin-bottom: 44px;
+  }
 }
 
 .card {
@@ -473,6 +488,13 @@ a:hover {
   right: 20px;
   font-size: 24px;
   z-index: 25;
+}
+@media screen and (max-width: 959px) {
+  .card_title {
+    font-size: 20px;
+    left: 30px;
+    bottom: 30px;
+  }
 }
 
 .cta {
