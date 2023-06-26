@@ -648,6 +648,11 @@ a:hover {
   padding: 180px 0;
   position: relative;
 }
+@media screen and (max-width: 959px) {
+  .section-map {
+    padding: 90px 0;
+  }
+}
 .section-map::before {
   content: "V";
   right: calc(50% + 555px);
@@ -666,6 +671,11 @@ a:hover {
 .section-map_title {
   margin-bottom: 88px;
 }
+@media screen and (max-width: 959px) {
+  .section-map_title {
+    margin-bottom: 44px;
+  }
+}
 
 .map {
   background: #626262;
@@ -679,12 +689,22 @@ a:hover {
 .feedback_title {
   padding-bottom: 38px;
 }
+@media screen and (max-width: 959px) {
+  .feedback_title {
+    padding-bottom: 19px;
+  }
+}
 
 .feedback_form {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   align-items: center;
+}
+@media screen and (max-width: 959px) {
+  .feedback_form {
+    grid-template-columns: 1fr;
+  }
 }
 
 .footer {
@@ -694,11 +714,27 @@ a:hover {
   font-size: 14px;
   letter-spacing: 0.05rem;
 }
+@media screen and (max-width: 959px) {
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+}
 
 .footer_gird {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+}
+@media screen and (max-width: 959px) {
+  .footer_gird {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
+}
+@media screen and (max-width: 640px) {
+  .footer_gird {
+    text-align: center;
+  }
 }
 
 .footer_logo {
